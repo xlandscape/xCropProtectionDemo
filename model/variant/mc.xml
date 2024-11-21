@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MCRun>
+  <Observers>
+    <Observer module="observer" class="ConsoleObserver">
+      <show_messages_get_values_ok>false</show_messages_get_values_ok>
+    </Observer>
+    <Observer module="observer" class="LogFileObserver">
+      <LogFile>$(_EXP_BASE_DIR_)\$(SimID)\log\mc_$(_MC_NAME_).log</LogFile>
+      <show_messages_get_values_ok>false</show_messages_get_values_ok>
+    </Observer>
+  </Observers>
+  <Store module="stores" class="X3dfStore">
+    <File_Path>$(_MCS_BASE_DIR_)\$(_MC_NAME_)\store</File_Path>
+    <Observer>
+      <ObserverReference/>
+    </Observer>
+    <Initialization/>
+  </Store>
+  <Global/>
+  <Composition>
+    <LandscapeScenario module="components" class="LandscapeScenario">
+      <BaseLandscapeGeometries scales="global">$(:LandscapeScenario)</BaseLandscapeGeometries>
+      <GeoPackageNamespace scales="global">urn:xCropProtectionLandscapeScenarioGeoPackage</GeoPackageNamespace>
+    </LandscapeScenario>
+    <xCropProtection module="CropProtection" class="xCropProtection">
+      <xCropProtectionFilePath scales="global">
+        $(_PROJECT_DIR_)\CropProtection\$(CropProtectionScenario)
+      </xCropProtectionFilePath>
+      <ParametrizationNamespace scales="global">
+        urn:xCropProtectionLandscapeScenarioParametrization
+      </ParametrizationNamespace>
+      <SimulationStart type="date" scales="global">$(SimulationStart)</SimulationStart>
+      <SimulationEnd type="date" scales="global">$(SimulationEnd)</SimulationEnd>
+      <RandomSeed type="int" scales="global">0</RandomSeed>
+      <OutputApplicationType>$(OutputApplicationType)</OutputApplicationType>
+      <ProductDatabase>$(_PROJECT_DIR_)\$(ProductDatabase)</ProductDatabase>
+      <XMLPath>$(_EXP_BASE_DIR_)\$(SimID)</XMLPath>
+      <MinimumAppliedArea scales="global">$(MinimumAppliedArea)</MinimumAppliedArea>
+      <Fields>
+        <FromOutput component="LandscapeScenario" output="FeatureIds"/>
+      </Fields>
+      <LandUseLandCoverTypes>
+        <FromOutput component="LandscapeScenario" output="FeatureTypeIds"/>
+      </LandUseLandCoverTypes>
+      <FieldGeometries>
+        <FromOutput component="LandscapeScenario" output="Geometries"/>
+      </FieldGeometries>
+    </xCropProtection>
+  </Composition>
+</MCRun>

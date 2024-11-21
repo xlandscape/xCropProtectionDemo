@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PPMCalendar xmlns="urn:xCropProtectionLandscapeScenarioParametrization">
+    <TemporalValidity scales="time/simulation">
+        always
+    </TemporalValidity>
+    <TargetCrops type="list[int]" scales="global">
+        222
+    </TargetCrops>
+    <Indications>
+        <Indication type="xCropProtection.ChoiceDistribution" scales="time/year, space/base_geometry">
+            <ApplicationSequence probability="1">
+            <!--February 1-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Calypso
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">250</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">01-22 to 02-11</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--April 2-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Syllit Flow
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2500</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">03-23 to 04-12</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--April 10-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Merpan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">03-31 to 04-20</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--April 20-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Sercadis
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">250</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-10 to 04-30</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Captosan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">1100</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-10 to 04-30</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Gazelle
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">250</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-10 to 04-30</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--April 28-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Delan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-18 to 05-08</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Sercadis
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">200</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-18 to 05-08</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Scala
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">600</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-18 to 05-08</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--May 3-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Merpan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-23 to 05-13</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--May 7-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Captosan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-27 to 05-17</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Scala
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">700</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-27 to 05-17</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Difcor
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">200</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-27 to 05-17</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Regalis
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">900</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">04-27 to 05-17</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--May 13-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Cyflamid
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">500</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-03 to 05-23</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Merpan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-03 to 05-23</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Score
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">200</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-03 to 05-23</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--May 23-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Cyflamid
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">400</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-13 to 06-02</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Merpan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-13 to 06-02</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Score
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">200</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-13 to 06-02</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--June 6-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Merpan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-23 to 06-12</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Flint
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">150</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-23 to 06-12</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Novagib
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">500</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-23 to 06-12</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--June 8-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Movento
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">750</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">05-29 to 06-18</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--June 13-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Merpan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-03 to 06-23</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Nimrod
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">500</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-03 to 06-23</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Coragen
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">175</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-03 to 06-23</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--June 17-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Vertimec
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">250</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-07 to 06-27</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Siltac
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">100</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-07 to 06-27</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--June 23-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            VSM Captan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-13 to 07-03</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Dithane
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-13 to 07-03</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Nimrod
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">500</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-13 to 07-03</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            <!--July 2-->
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Merpan
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">2000</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan">06-22 to 07-12</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            </ApplicationSequence>
+        </Indication>
+    </Indications>
+</PPMCalendar>

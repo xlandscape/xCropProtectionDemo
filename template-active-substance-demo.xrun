@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameters>
+  <!--
+  Parameter     :  Modeller
+  Description   :  The name of the modeller.
+  Values        :  Any text.
+  Remark        :  This value is organizational metadata and is not used technically.
+  -->
+  <Modeller>-</Modeller>
+
+  <!--
+  Parameter     :  Project
+  Description   :  The landscape scenario which is used in the experiment (by the simulation).
+  Values        :  Should be an existing scenario (relative path), typically provided in the folder 'scenario'.
+  Remark        :  Make sure that the scenario is present in the scenario sub-folder.
+  -->
+  <Project>scenario/Demo-scenario</Project>
+
+  <!--
+  Parameter     :  CropProtectionScenario
+  Description   :  The crop protection (CP) scenario which is used in the experiment (by the simulation).
+  Values        :  Should be an existing CP scenario, typically provided in the folder 'CropProtection'.
+				   The file extension must be included in this value. Use .xml for XML files and .xlsx
+				   for Excel files.
+  Remark        :  Make sure that the CP scenario is present in the CropProtection sub-folder.
+  -->
+  <CropProtectionScenario>xCropProtection-demo-active-substance.xml</CropProtectionScenario>
+  
+  <!--
+  Parameter		: OutputApplicationType
+  Description	: The output type of applications for all fields.
+  Values		: Should be one of two strings: 'product' or 'active substance' (without '')
+  Remark		: Note the different combinations of input(specified in PPM Calendars) and output types.
+					input product 			-> output product 			: valid
+					input product 			-> output product			: valid
+					input active substance 	-> output active substance	: valid
+					input active substance 	-> output product 			: invalid
+  -->
+  <OutputApplicationType>active substance</OutputApplicationType>
+  
+  <!--
+  Parameter		: ProductDatabase
+  Description	: The database which contains information on product-active substance relationships.
+  Values		: Should be an existing SQLite database (relative path), typically provided in the folder 'CropProtection'
+  Remark		: Make sure the database is present in the CropProtection sub-folder.
+					Use CropProtection/product-active-substance.db as a default value.
+  -->
+  <ProductDatabase>CropProtection/product-active-substance.db</ProductDatabase>
+
+  <!--
+  Parameter     :  SimulationStart
+  Description   :  The first date that is simulated in the experiment.
+  Values        :  A date of format YYYY-MM-DD within the valid range of dates.
+  Remark        :  The valid range of start dates is mainly determined by the input data for the selected scenario
+                   (especially the landscape scenario). The available ranges can be obtained from the scenario
+                   documentation.
+  -->
+  <SimulationStart>2000-01-01</SimulationStart>
+
+  <!--
+  Parameter     :  SimulationEnd
+  Description   :  The last date that is simulated in the experiment.
+  Values        :  A date of format YYYY-MM-DD within the valid range of dates.
+  Remark        :  The valid range of start dates is mainly determined by the input data for the selected scenario
+                   (especially the landscape scenario). The available ranges can be obtained from the scenario
+                   documentation.
+  -->
+  <SimulationEnd>2005-12-31</SimulationEnd>
+
+  <!--
+  Parameter     :  SimID
+  Description   :  Unique identifier of an experiment (comprising a number of Monte Carlo simulations).
+  Values        :  Any characters that are valid in file system identifiers.
+  Remark        :  Running an experiment with the same name as an existing simulation run results in an error.
+  -->
+  <SimID>demo-active-substance</SimID>
+
+  <!--
+  Parameter     :  NumberMC
+  Description   :  The number of Monte Carlo runs, defining an experiment.
+  Values        :  Any positive integer.
+  Remark        :  MC runs are conducted in parallel, according to the NumberParallelProcesses parameter.
+  -->
+  <NumberMC>1</NumberMC>
+
+  <!--
+  Parameter     :  ParallelProcesses
+  Description   :  The number of Monte Carlo runs that are conducted simultaneously.
+  Values        :  Any positive integer.
+  Remark        :  This parameter should be modified according to the available hardware resources (and the resource
+                   needs of an individual Monte Carlo run).
+  -->
+  <ParallelProcesses>1</ParallelProcesses>
+
+  <!--
+  Parameter     :  MinimumAppliedArea
+  Description   :  The minimum area of a field that is required for an application to occur.
+  Values        :  Any positive number. The unit of this value is m².
+  Remark        :  If the area of a field is smaller than this value after applying the InCropBuffer and
+				   InFieldMargin values (defined in PPMCalendars), no application will occur.
+				   This value applies to all fields in the scenario.
+  -->
+  <MinimumAppliedArea>0</MinimumAppliedArea>
+</Parameters>

@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PPMCalendar xmlns="urn:xCropProtectionLandscapeScenarioParametrization">
+   <TemporalValidity scales="time/simulation">
+      always
+   </TemporalValidity>
+   <TargetCrops type="list[int]" scales="global">
+      222
+   </TargetCrops>
+   <Indications>
+      <Indication type="xCropProtection.ChoiceDistribution" scales="time/year, space/base_geometry">
+         <ApplicationSequence probability="1.0">
+         <!-- Insecticides -->
+            <!--Aphids-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Movento
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">365</Lower>
+                        <Upper type="float" scales="global">435</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-01 to 05-10
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Movento
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">365</Lower>
+                        <Upper type="float" scales="global">435</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Admire
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">230</Lower>
+                        <Upper type="float" scales="global">230</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Apple brown bug-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Decis
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">200</Lower>
+                        <Upper type="float" scales="global">200</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 06-08
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Apple leaf curling midge-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Decis
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">200</Lower>
+                        <Upper type="float" scales="global">250</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 06-08
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Apple maggot-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">440</Lower>
+                        <Upper type="float" scales="global">440</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  06-15 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Apple rust mite-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Envidor
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">750</Lower>
+                        <Upper type="float" scales="global">750</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  06-07 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Codling moth-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">290</Lower>
+                        <Upper type="float" scales="global">440</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  06-07 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Eastern tent caterpillar-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Sevin XLR
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">6250</Lower>
+                        <Upper type="float" scales="global">6250</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--European red mite-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Envidor
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">750</Lower>
+                        <Upper type="float" scales="global">750</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Leafhopper-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">145</Lower>
+                        <Upper type="float" scales="global">145</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Admire
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">200</Lower>
+                        <Upper type="float" scales="global">200</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Sevin XLR
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">3100</Lower>
+                        <Upper type="float" scales="global">3100</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--McDanial spider mite-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Envidor
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">750</Lower>
+                        <Upper type="float" scales="global">750</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  06-07 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Mealybug-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Movento
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">365</Lower>
+                        <Upper type="float" scales="global">585</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Mullein bug-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">145</Lower>
+                        <Upper type="float" scales="global">290</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-10 to 05-20
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">145</Lower>
+                        <Upper type="float" scales="global">290</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 06-14
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Admire
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">380</Lower>
+                        <Upper type="float" scales="global">380</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 06-14
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Oriental fruit moth-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">440</Lower>
+                        <Upper type="float" scales="global">440</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Decis
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">200</Lower>
+                        <Upper type="float" scales="global">250</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 06-08
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Plum curculio-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">290</Lower>
+                        <Upper type="float" scales="global">440</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--San Jose scale-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Movento
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">365</Lower>
+                        <Upper type="float" scales="global">585</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Spring feeding caterpillars-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Decis
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">200</Lower>
+                        <Upper type="float" scales="global">200</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  04-15 to 05-20
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Tentiform leafminer-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">145</Lower>
+                        <Upper type="float" scales="global">290</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-01 to 05-20
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Calypso
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">145</Lower>
+                        <Upper type="float" scales="global">290</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Decis
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">250</Lower>
+                        <Upper type="float" scales="global">250</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-01 to 05-20
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Decis
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">250</Lower>
+                        <Upper type="float" scales="global">250</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 06-08
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Admire
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">380</Lower>
+                        <Upper type="float" scales="global">380</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Two-spotted spider mite-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Envidor
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">750</Lower>
+                        <Upper type="float" scales="global">750</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  06-07 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Winter moth-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Decis
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">150</Lower>
+                        <Upper type="float" scales="global">150</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 06-08
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Wooly apple aphid-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Movento
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">365</Lower>
+                        <Upper type="float" scales="global">435</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+         <!-- Fungicides -->
+            <!--Apple scab-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Flint
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">140</Lower>
+                        <Upper type="float" scales="global">175</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  04-15 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Scala
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">750</Lower>
+                        <Upper type="float" scales="global">1000</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  04-01 to 05-20
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Blister spot-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Aliette
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">2000</Lower>
+                        <Upper type="float" scales="global">2000</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-25 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Botrytis storage diseases-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Scala
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">1500</Lower>
+                        <Upper type="float" scales="global">2000</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  09-01 to 09-14
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Cedar apple rust-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Flint
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">140</Lower>
+                        <Upper type="float" scales="global">210</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-01 to 05-20
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Fly speck-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Flint
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">140</Lower>
+                        <Upper type="float" scales="global">175</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  06-15 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Penicillium storage diseases-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Scala
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">1500</Lower>
+                        <Upper type="float" scales="global">2000</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  09-01 to 09-14
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Powdery mildew-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Flint
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">140</Lower>
+                        <Upper type="float" scales="global">210</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  04-15 to 06-14
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Phytophthora-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Aliette
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">3000</Lower>
+                        <Upper type="float" scales="global">5000</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  05-01 to 05-20
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <!--Sooty blotch-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Flint
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">140</Lower>
+                        <Upper type="float" scales="global">175</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  06-15 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+         <!-- Herbicides -->
+            <!--Grassy and broadleaf weeds-->
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Ignite
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">2750</Lower>
+                        <Upper type="float" scales="global">5000</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  04-01 to 08-21
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+            <Application>
+               <Tank>
+                  <Products type="list[str]" scales="other/products">
+                     Sencor
+                  </Products>
+                  <ApplicationRates scales="other/products">
+                     <ApplicationRate type="xCropProtection.UniformDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                        <Lower type="float" scales="global">500</Lower>
+                        <Upper type="float" scales="global">1000</Upper>
+                     </ApplicationRate>
+                  </ApplicationRates>
+               </Tank>
+               <ApplicationWindow type="xCropProtection.MonthDaySpan">
+                  04-01 to 06-14
+               </ApplicationWindow>
+               <Technology scales="global">Technology</Technology>
+               <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+               <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+            </Application>
+         </ApplicationSequence>
+      </Indication>
+   </Indications>
+</PPMCalendar>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="urn:xCropProtectionLandscapeScenarioGeoPackage"
+    xmlns="urn:xCropProtectionLandscapeScenarioGeoPackage"
+    elementFormDefault="qualified"
+>
+  <xsd:element name="landscape_package">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="meta">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="version">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="[0-9]+(\.[0-9]+)*"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="description" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+              <xsd:element name="target_type" type="xsd:positiveInteger"/>
+              <xsd:element name="habitat_types">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="[0-9]+(, [0-9]+)*"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ROI_extent" minOccurs="0" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="[0-9]+(\.[0-9]+)*(, [0-9]+(\.[0-9]+)*)*"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="base">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="base_landscape_geometries">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="[a-zA-Z0-9_]+\.shp"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="feature_id_attribute">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:minLength value="1"/>
+                    <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="feature_type_attribute">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:minLength value="1"/>
+                    <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="additional_attributes">
+                <xsd:complexType>
+                  <xsd:sequence/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="supplementary">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="flow_grid" minOccurs="0">
+                <xsd:complexType>
+                  <xsd:simpleContent>
+                    <xsd:extension base="tif">
+                      <xsd:attribute name="deviatingExtent" type="xsd:string"/>
+                    </xsd:extension>
+                  </xsd:simpleContent>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="land_use_raster" type="tif" minOccurs="0"/>
+              <xsd:element name="analysis_distance_groups" type="tif" minOccurs="0"/>
+            </xsd:sequence>    
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="supplementary_shapefiles">
+          <xsd:complexType>
+            <xsd:sequence/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:simpleType name="tif">
+    <xsd:restriction base="xsd:string">
+        <xsd:pattern value="[a-zA-Z0-9_]+\.tif"/>
+    </xsd:restriction>        
+  </xsd:simpleType>
+</xsd:schema>

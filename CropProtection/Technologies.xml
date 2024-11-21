@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Technologies
+    xmlns="urn:xCropProtectionLandscapeScenarioParametrization" 
+>
+    <Technology>
+        <TechnologyName scales="global">Technology</TechnologyName>
+        <DriftReduction type="float" unit="1" scales="global">0.5</DriftReduction>
+    </Technology>
+    <Technology>
+        <TechnologyName scales="global">Technology2</TechnologyName>
+        <DriftReduction type="float" unit="1" scales="global">0.4</DriftReduction>
+    </Technology>
+</Technologies>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PPMCalendar xmlns="urn:xCropProtectionLandscapeScenarioParametrization">
+    <TemporalValidity scales="time/simulation">
+        always
+    </TemporalValidity>
+    <TargetCrops type="list[int]" scales="global">
+        222
+    </TargetCrops>
+    <Indications>
+        <Indication type="xCropProtection.ChoiceDistribution" scales="time/year, space/base_geometry">
+            <ApplicationSequence probability=".7">
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Product 1
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="xCropProtection.NormalDistribution" unit="g/ha" scales="time/year, space/base_geometry">
+                                <Mean type="float" scales="global">25</Mean>
+                                <SD type="float" scales="global">1.5</SD> 
+                            </ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan" scales="global">05-01 to 05-10</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            </ApplicationSequence>
+            <ApplicationSequence probability=".3">
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Product 4
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">100</ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan" scales="global">05-01 to 05-10</ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                </Application>
+            </ApplicationSequence>
+        </Indication>
+    </Indications>
+</PPMCalendar>

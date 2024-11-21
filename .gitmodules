@@ -1,0 +1,6 @@
+[submodule "model/core"]
+	path = model/core
+	url = https://github.com/xlandscape/LandscapeModel-Core
+[submodule "model/variant/CropProtection"]
+	path = model/variant/CropProtection
+	url = https://github.com/xlandscape/CropProtection-Component

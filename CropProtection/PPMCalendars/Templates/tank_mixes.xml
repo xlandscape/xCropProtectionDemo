@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PPMCalendar xmlns="urn:xCropProtectionLandscapeScenarioParametrization">
+    <TemporalValidity scales="time/simulation"> always </TemporalValidity>
+    <TargetCrops type="list[int]" scales="global"> 222 </TargetCrops>
+    <Indications>
+        <Indication type="xCropProtection.ChoiceDistribution" scales="time/year, space/base_geometry">
+            <ApplicationSequence probability="1">
+                <Application>
+                    <Tank>
+                        <Products type="list[str]" scales="other/products">
+                            Product 1|Product 2
+                        </Products>
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">
+                                100
+                            </ApplicationRate>
+                            <ApplicationRate type="float" unit="g/ha" scales="global">
+                                150
+                            </ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan" scales="global">
+                        05-01 to 05-10
+                    </ApplicationWindow>
+                    <Technology scales="global">Technology</Technology>
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                    <MinimumAppliedArea type="float" unit="m²" scales="global">0</MinimumAppliedArea>
+                </Application>
+            </ApplicationSequence>
+        </Indication>
+    </Indications>
+</PPMCalendar>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<landscape_package 
+    xmlns="urn:xCropProtectionLandscapeScenarioGeoPackage" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="urn:xCropProtectionLandscapeScenarioGeoPackage ../../../model/variant/package.xsd"
+>
+  <meta>
+    <version>1.0</version>
+    <target_type>222</target_type>
+    <habitat_types>0</habitat_types>
+  </meta>
+  <base>
+    <base_landscape_geometries>LULC.shp</base_landscape_geometries>
+    <feature_id_attribute>ALVID</feature_id_attribute>
+    <feature_type_attribute>LULCTypeId</feature_type_attribute>
+    <additional_attributes/>
+  </base>
+  <supplementary>
+  </supplementary>
+  <supplementary_shapefiles/>
+</landscape_package>

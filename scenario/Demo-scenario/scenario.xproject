@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project 
+    xmlns="urn:xLandscapeModelScenarioInfo"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:xLandscapeModelScenarioInfo ../../model/core/base/scenario.xsd">
+    <Name>DemoScenario</Name>
+    <Version>1.1</Version>
+    <SupportedRuntimeVersions>
+        <Version variant="xCropProtection" number="1.0"/>
+    </SupportedRuntimeVersions>
+    <Description>Subset of a landscape scenario in Rummen, Belgium. Used to demo and test xCropProtection functionality.</Description>
+    <TemporalExtent>
+        <FromDate>1979-01-01</FromDate>
+        <ToDate>2022-12-31</ToDate>
+    </TemporalExtent>
+    <Changelog>
+        <Version number="1.0" date="2024-05-16">
+            <Addition author="ceh">Scenario created.</Addition>
+        </Version>
+        <Version number="1.1" date="2024-11-13">
+            <Change author="ceh">Changed name to DemoScenario and updated xCropProtection version to 1.0.</Change>
+        </Version>
+    </Changelog>
+    <Content>
+        <Item name="LandscapeScenario" target="geo/package.xinfo" version="1.0" />
+    </Content>
+    <Contacts>
+        <Contact>Thorsten Schad - thorsten.schad@bayer.com</Contact>
+    </Contacts>
+</Project>

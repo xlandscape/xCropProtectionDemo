@@ -27,8 +27,8 @@ The development of the xCropProtection component is intended to support the work
 
 ### Built with
 * Landscape Model core version 1.17.0
-* CropProtection component version 1.0
-* xCropProtection version 1.0
+* CropProtection component version 1.18.0
+* xCropProtection version 1.2
 
 ## Getting Started
 The component can be used in any Landscape Model based on core version 1.17.0 or newer. See the Landscape Model core's [`README`](https://github.com/xlandscape/LandscapeModel-Core) for general tips on how to add a component to a Landscape Model.
@@ -51,7 +51,7 @@ pip install -r /path/to/requirements.txt
 requirements.txt is located in the analysis folder of xCropProtection.
 
 ## Usage
-To run xCropProtection, drag one of the template.xrun files onto *__start_\_.bat*. These XRUN files contain information about which files will be used as input to xCropProtection. They can be viewed and edited with a text editor such as Notepad. xCropProtection version 1.0 includes the following templates:
+To run xCropProtection, drag one of the template.xrun files onto *__start_\_.bat*. These XRUN files contain information about which files will be used as input to xCropProtection. They can be viewed and edited with a text editor such as Notepad. xCropProtection version 1.2 includes the following templates:
 
 * **template.xrun**: Intended to be used to test if the installation of xCropProtection was successful. Uses the demo scenario and PPM Calendars located in *CropProtection\PPMCalendars\Demo-calendars*.
 * **template-active-substance-demo.xrun**: Demonstrates how to parameterize xCropProtection using active substances. Uses the demo scenario and PPM Calendars located in *CropProtection\PPMCalendars\Demo-calendars*.
@@ -62,13 +62,19 @@ For information about parameterizing xCropProtection, see the CropProtection com
 
 ### Scenarios
 
-xCropProtection version 1.0 includes 2 landscape scenarios:
+xCropProtection version 1.2 includes 2 landscape scenarios:
 
 * **Demo-scenario**: A scenario of 1,000 fields, each assigned one of two landcover types. This scenario is intended to be used to gain familiarity with xCropProtection by providing a small scenario to use for quick simulations. To explore this scenario further, open the QGIS project located in the *scenario\Demo-scenario\Documentation* folder.
 * **Rummen**: A scenario representing apple fields in a catchment near Rummen, Belgium. To explore this scenario further, open the QGIS project located in the *scenario\Rummen\Documentation* folder.
 
 ## Contributing
 Contributions are welcome. Please contact the authors (see [Contact](#contact)).
+
+## Release Notes
+
+### 1.2
+
+Reduced the run time of the CropProtection component.
 
 ## License
 Distributed under the CC0 License. See `LICENSE` for more information.

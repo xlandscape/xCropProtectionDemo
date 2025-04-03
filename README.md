@@ -80,6 +80,6 @@ Reduced the run time of the CropProtection component.
 Distributed under the CC0 License. See `LICENSE` for more information.
 
 ## Contact
-Thorsten Schad - thorsten.schad@bayer.com  
+Thorsten Schad - tschadwork@gmail.com 
 Sascha Bub - sascha.bub@gmx.de  
 Petrus Salminen - petrus.salminen@wsc-regexperts.com  

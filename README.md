@@ -28,7 +28,7 @@ The development of the xCropProtection component is intended to support the work
 ### Built with
 * Landscape Model core version 1.17.0
 * CropProtection component version 1.18.0
-* xCropProtection version 1.2
+* xCropProtection version 1.2.1
 
 ## Getting Started
 The component can be used in any Landscape Model based on core version 1.17.0 or newer. See the Landscape Model core's [`README`](https://github.com/xlandscape/LandscapeModel-Core) for general tips on how to add a component to a Landscape Model.

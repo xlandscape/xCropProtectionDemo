@@ -6,7 +6,7 @@
   Values        :  Any text.
   Remark        :  This value is organizational metadata and is not used technically.
   -->
-  <Modeller>-</Modeller>
+  <Modeller>ths</Modeller>
 
   <!--
   Parameter     :  Project
@@ -24,7 +24,7 @@
 				   for Excel files.
   Remark        :  Make sure that the CP scenario is present in the CropProtection sub-folder.
   -->
-  <CropProtectionScenario>xCropProtection-rummen.xml</CropProtectionScenario>
+  <CropProtectionScenario>xCP-UI-SingleSubstance_ths_feb2026_1.xlsx</CropProtectionScenario>
   
   <!--
   Parameter		: OutputApplicationType
@@ -36,7 +36,7 @@
 					input active substance 	-> output active substance	: valid
 					input active substance 	-> output product 			: invalid
   -->
-  <OutputApplicationType>product</OutputApplicationType>
+  <OutputApplicationType>active substance</OutputApplicationType>
   
   <!--
   Parameter		: ProductDatabase
@@ -73,7 +73,7 @@
   Values        :  Any characters that are valid in file system identifiers.
   Remark        :  Running an experiment with the same name as an existing simulation run results in an error.
   -->
-  <SimID>Rummen-scenario_2</SimID>
+  <SimID>test_ths-DLT1</SimID>
 
   <!--
   Parameter     :  NumberMC
@@ -81,7 +81,7 @@
   Values        :  Any positive integer.
   Remark        :  MC runs are conducted in parallel, according to the NumberParallelProcesses parameter.
   -->
-  <NumberMC>1</NumberMC>
+  <NumberMC>3</NumberMC>
 
   <!--
   Parameter     :  ParallelProcesses
@@ -90,7 +90,7 @@
   Remark        :  This parameter should be modified according to the available hardware resources (and the resource
                    needs of an individual Monte Carlo run).
   -->
-  <ParallelProcesses>1</ParallelProcesses>
+  <ParallelProcesses>3</ParallelProcesses>
 
   <!--
   Parameter     :  MinimumAppliedArea
@@ -100,5 +100,5 @@
 				   InFieldMargin values (defined in PPMCalendars), no application will occur.
 				   This value applies to all fields in the scenario.
   -->
-  <MinimumAppliedArea>0</MinimumAppliedArea>
+  <MinimumAppliedArea>1</MinimumAppliedArea>
 </Parameters>

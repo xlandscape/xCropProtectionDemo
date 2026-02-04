@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    PPM Calendar for Single Application of Plant Protection Product
+    
+    This file defines a simple scenario with one product application per year.
+    
+    Key parameters to customize:
+    - TargetCrops: LULC type ID where the product should be applied (e.g., 222 for specific crop)
+    - Products: Name of the plant protection product
+    - ApplicationRate: Amount applied in g/ha
+    - ApplicationWindow: Date range when application can occur (MM-DD format)
+    - Technology: Application technology/method used
+    - InCropBuffer/InFieldMargin: Buffer zones in meters
+-->
+<PPMCalendar xmlns="urn:xCropProtectionLandscapeScenarioParametrization">
+    
+    <!-- This PPM calendar is valid for the entire simulation period -->
+    <TemporalValidity scales="time/simulation"> always </TemporalValidity>
+    
+    <!-- Target crop: LULC type 222 (adjust to your specific crop type) -->
+    <TargetCrops type="list[int]" scales="global"> 222 </TargetCrops>
+    
+    <Indications>
+        <!-- Single indication with 100% probability of being applied -->
+        <Indication type="xCropProtection.ChoiceDistribution" scales="time/year, space/base_geometry">
+            <ApplicationSequence probability="1">
+                <Application>
+                    <Tank>
+                        <!-- Product name - should match entry in product database -->
+                        <Products type="list[str]" scales="other/products">
+                            Product 1
+                        </Products>
+                        
+                        <!-- Application rate in grams per hectare -->
+                        <ApplicationRates scales="other/products">
+                            <ApplicationRate type="float" unit="g/ha" scales="global">
+                                100
+                            </ApplicationRate>
+                        </ApplicationRates>
+                    </Tank>
+                    
+                    <!-- Application window: May 1st to May 10th
+                         Each day in this range has equal probability -->
+                    <ApplicationWindow type="xCropProtection.MonthDaySpan" scales="global">
+                        05-01 to 05-10
+                    </ApplicationWindow>
+                    
+                    <!-- Application technology (e.g., sprayer type, drift reduction class) -->
+                    <Technology scales="global">Technology</Technology>
+                    
+                    <!-- In-crop buffer zone in meters (no treatment zone within crop) -->
+                    <InCropBuffer type="float" unit="m" scales="global">0</InCropBuffer>
+                    
+                    <!-- In-field margin in meters (edge of field buffer) -->
+                    <InFieldMargin type="float" unit="m" scales="global">0</InFieldMargin>
+                    
+                    <!-- Minimum field area that must be present for application to occur -->
+                    <MinimumAppliedArea type="float" unit="m²" scales="global">0</MinimumAppliedArea>
+                </Application>
+            </ApplicationSequence>
+        </Indication>
+    </Indications>
+</PPMCalendar>

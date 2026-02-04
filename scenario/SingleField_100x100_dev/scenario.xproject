@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project 
+    xmlns="urn:xLandscapeModelScenarioInfo"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:xLandscapeModelScenarioInfo ../../model/core/base/scenario.xsd">
+    <Name>SingleField100x100</Name>
+    <Version>1.1</Version>
+    <SupportedRuntimeVersions>
+        <Version variant="xCropProtection" number="1.0"/>
+    </SupportedRuntimeVersions>
+    <Description>Schematic single field of 100m x 100m size</Description>
+    <TemporalExtent>
+        <FromDate>1979-01-01</FromDate>
+        <ToDate>2022-12-31</ToDate>
+    </TemporalExtent>
+    <Changelog>
+        <Version number="1.0" date="2026-02-03">
+            <Addition author="ceh">Scenario created.</Addition>
+        </Version>
+    </Changelog>
+    <Content>
+        <Item name="LandscapeScenario" target="geo/package.xinfo" version="1.0" />
+    </Content>
+    <Contacts>
+        <Contact>Thorsten Schad - thorsten.schad@landwerk.de</Contact>
+    </Contacts>
+</Project>

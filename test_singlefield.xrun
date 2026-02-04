@@ -14,7 +14,7 @@
   Values        :  Should be an existing scenario (relative path), typically provided in the folder 'scenario'.
   Remark        :  Make sure that the scenario is present in the scenario sub-folder.
   -->
-  <Project>scenario/Rummen</Project>
+  <Project>scenario/SingleField_100x100</Project>
 
   <!--
   Parameter     :  CropProtectionScenario
@@ -24,7 +24,7 @@
 				   for Excel files.
   Remark        :  Make sure that the CP scenario is present in the CropProtection sub-folder.
   -->
-  <CropProtectionScenario>xCropProtection-rummen.xml</CropProtectionScenario>
+  <CropProtectionScenario>xCropProtection-demo.xml</CropProtectionScenario>
   
   <!--
   Parameter		: OutputApplicationType
@@ -65,7 +65,7 @@
                    (especially the landscape scenario). The available ranges can be obtained from the scenario
                    documentation.
   -->
-  <SimulationEnd>2005-12-31</SimulationEnd>
+  <SimulationEnd>2001-12-31</SimulationEnd>
 
   <!--
   Parameter     :  SimID
@@ -73,7 +73,7 @@
   Values        :  Any characters that are valid in file system identifiers.
   Remark        :  Running an experiment with the same name as an existing simulation run results in an error.
   -->
-  <SimID>Rummen-scenario_2</SimID>
+  <SimID>test1341234</SimID>
 
   <!--
   Parameter     :  NumberMC

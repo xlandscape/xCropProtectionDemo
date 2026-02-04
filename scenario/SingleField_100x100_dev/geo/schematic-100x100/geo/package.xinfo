@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<landscape_package>
+    <meta>
+        <version>1.0</version>
+        <description>
+            A simple schematic landscape consisting of a 100 x 100 m field and a 100 x 100 m habitat located east of
+            the field. The landscape has an overall slope towards the East.
+        </description>
+        <target_type>2</target_type>
+        <habitat_types>3</habitat_types>
+    </meta>
+    <base>
+        <base_landscape_geometries>fields.shp</base_landscape_geometries>
+        <feature_id_attribute>ID</feature_id_attribute>
+        <feature_type_attribute>LULCTypeID</feature_type_attribute>
+        <additional_attributes/>
+    </base>
+    <supplementary>
+        <flow_grid>flow_dir.tif</flow_grid>
+        <land_use_raster>fields.tif</land_use_raster>
+        <analysis_distance_groups>AnalysisBuffer.tif</analysis_distance_groups>
+    </supplementary>
+    <supplementary_shapefiles/>
+</landscape_package>

@@ -1,11 +1,12 @@
 # Tank mixes
 
 ## Background
+
 When farmers put **multiple PPPs in the same spray tank**, this is called a *Tank mix*. Tank mixes allow farmers to reduce the ressorce needs for pest control (time, fuel), to increase pest control efficacy, or for pest resistance management. 
 As a consequence, the products in a tank mix are **applied at the same field (space), at the same time, using the same technology and risk mitigation**. This can cause different environmental effects than a more variable product use. In order to reflect this PPP use pattern (eg, in pesticide risk assessment) xCP allows to define *Tank mixes*.  
 
-
 ## Parameterisation
+
 xCP has an entity `Tank`. Multiple products can be defined in one tank to ensure that they will be applied on the same date and with the same values for `InCropBuffer` and `InFieldMargin`. Additionally, if the `ApplicationRates` are defined as probability distributions, the sampling of all `ApplicationRates` will occur with the same parameters.
 
 !!! note  
@@ -59,4 +60,3 @@ For explanations of each element, see [Simple Scenario](simple-scenario.md).
 <img src="../img/tank-mixes.PNG" alt="xCP parameterisation entities and their relationship" width="700"/>
 
 See also ['Indications'](../reference/glossary.md#indication) for the full picture of xCP entities and their relationship.
-

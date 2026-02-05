@@ -1,9 +1,11 @@
 # Choice Between Multiple Indications
 
 ## Background
-Pest control can be a rather complex undertaking. Modern integrated pest control tries to optimise control efficacy, at moderate economic cost and by minimising adverse environmental side effects. In such context, xCP offers the capability to evaluate alternative *Indications* in a *Crop Protection Calender*, ie, alternative measures against a certain pest in a crop, eg, alternative control of powdery mildew in vines, brown rot in apple, whitefly in olives, or blackgras in wheat. The choice of *Indications* might  represent *conventional* versus *organic* or *biological* pest control schemes. See also [Indications](../reference/glossary.md#indication) in the [Glossary](../reference/glossary.md).  
+
+Pest control can be a rather complex undertaking. Modern integrated pest control tries to optimise control efficacy, at moderate economic cost and by minimising adverse environmental side effects. In such context, xCP offers the capability to evaluate alternative *Indications* in a *Crop Protection Calendar*, ie, alternative measures against a certain pest in a crop, eg, alternative control of powdery mildew in vines, brown rot in apple, whitefly in olives, or blackgras in wheat. The choice of *Indications* might  represent *conventional* versus *organic* or *biological* pest control schemes. See also [Indications](../reference/glossary.md#indication) in the [Glossary](../reference/glossary.md).  
 
 ## Parameterisation
+
 An example of one `ApplicationSequence` selected from **each** `Indication` was shown in [Multiple Indications](multiple-indications.md). However, the `Indications` element can also be used to select only 1 `Indication` based on probability values. The following example demonstrates a situation where some fields (of a certain crop type) will receive product applications with further choices and some fields will receive no applications.
 
 ``` xml
@@ -157,7 +159,6 @@ In this example, all fields have a 30% chance of receiving "no treatment" and a 
 ```
 
 In this situation, an `ApplicationSequence` may still contain more than one `Application`. If that `ApplicationSequence` is selected, all `Application` elements contained in the selected `ApplicationSequence` will still be applied to the field. For explanations of each element, see [Simple Scenario](simple-scenario.md).
-
 
 ### Illustration
 

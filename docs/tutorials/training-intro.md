@@ -5,7 +5,7 @@ Goal: Create a scenario that represents a series of product applications to one 
 In this tutorial, you'll learn the basics of xCropProtection. You'll prepare a simulation using xCropProtection and recommendations for product applications for a specific pest.
 
 !!! note
-    In xCropProtection, the term **PPP use scenario** is used to describe a certain parameterization of xCropProtection including PPP application information, input/output scales, and temporal constraints. The term **landscape scenario** is used in the sense of a certain geographic region for which land use/cover, soil, weather, and habitat conditions have been defined as basis for landscape-scale pesticide exposure and effect modelling.
+    In xCropProtection, the term **CropProtection (PPP use) scenario** is used to describe a certain parameterization of xCropProtection including PPP application information, input/output scales, and temporal constraints. The term **landscape scenario** is used in the sense of a certain geographic region for which land use/cover, soil, weather, and habitat conditions have been defined as basis for landscape-scale pesticide exposure and effect modelling.
 
 <figure>
     <img src="../img/xCP-diagram.PNG" width="70%">

@@ -24,7 +24,7 @@ The development of xCP component, in the context of a modular landscape modellin
 
 xCropProtection is a **landscape model *component* for simulating applications of plant protection products** (PPPs) on fields within a given landscape. Multiple PPP uses in multiple crops can be simulated, comprising typical PPP spray sequences, eg. as recommended by plant protection services. This includes chemical and alternative plant protection measures.  
 
-The user defines PPP uses in a ***Crop Protection Calender***, including application technology, and mitigation measures for reducing exposure (risk). The approach of using a *Crop Protection Calender* is based on agricultural practice, where pest control measures for a crop are typically planned based on experiance, PPP availability and other factors. Crop protection plans are made eg, by official plant protection advisory services, farmers, or PPP producers. Besides reflecting ag practice, the approach of a CPC also addresses modelling practice in risk assessment which typically focus on a certain indication, conducted over long time periods. Beyond these established uses, alternative CPCs can be used to assess the environmental impact of alternative pest control options, or to design new pest control means against established ones, considered as baselines.  
+The user defines PPP uses in a ***Crop Protection Calendar*** (CPC), including application technology, and mitigation measures for reducing exposure and risk. The approach of using a *Crop Protection Calendar* is based on agricultural practice, where pest control measures for a crop are typically planned based on experiance, PPP availability and other factors. Crop protection plans are made eg, by official plant protection advisory services, farmers, or PPP producers. Besides reflecting ag practice, the approach of a CPC also addresses modelling practice in risk assessment which typically focus on a certain indication, conducted over long time periods. Beyond these established uses, alternative CPCs can be used to assess the environmental impact of alternative pest control options, or to design new pest control means against established ones, considered as baselines.  
 
 On each time step (eg, day) and field in a simulation, xCP checks if there are products to apply. If so, exact application details are determined based on model parameterisation (eg, deterministic or by sampling from  from distributions given by the user) and executed.  
 
@@ -35,12 +35,12 @@ xCP is basically built to be used as a **component, integrated into the modular 
 
 ### Option 1: xCropProtection Demo Model
 As every component, xCP needs to be operated in a landscape modelling environment. An example landscape model using xCP was built in the [xLandscape](xLandscape/xLandscape-intro.md) framework, called **xCropProtectionDemo**.  
-A user who just want to explore xCP or only needs the functionality of xCP should clone the repository [xCropProtectionDemo](https://github.com/xlandscape/xCropProtectionDemo/tree/main). Contact Sascha Bub ([sascha.bub@rptu.de](mailto:sascha.bub@rptu.de)) or Thorsten Schad ([thorsten.schad@bayer.com](mailto:thorsten.schad@bayer.com)) for access to the repository. Cloning steps vary based on the application being used, eg. [Sourcetree](https://support.atlassian.com/bitbucket-cloud/docs/clone-a-git-repository/) or [Visual Studio Code](https://learn.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository?tabs=activity-bar).  
+A user who just want to explore xCP or only needs the functionality of xCP should clone the repository [xCropProtectionDemo](https://github.com/xlandscape/xCropProtectionDemo/tree/main). Contact Sascha Bub ([sascha.bub@rptu.de](mailto:sascha.bub@rptu.de)) or Thorsten Schad ([thorsten.schad@landwerk-ev.de](mailto:thorsten.schad@landwerk-ev.de)) for access to the repository. Cloning steps vary based on the application being used, eg. [Sourcetree](https://support.atlassian.com/bitbucket-cloud/docs/clone-a-git-repository/) or [Visual Studio Code](https://learn.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository?tabs=activity-bar).  
 
 After cloning the repository, a user will have everything necessary to start using xCropProtection including sample scenarios and parametrization files.  
 
 
-### Option 2: add xCropProtection to any Landscape Model
+### Option 2: add xCropProtection to any xLandscape Model
 As any other component, xCP is built to be used (together with other components) in the [xLandscape](xLandscape/xLandscape-intro.md) framework in order to build a landscape model. 
 
 1. The Landscape Model must first be set up; see the Landscape Model Core's [README](https://github.com/xlandscape/LandscapeModel-Core/blob/master/README.md) for detailed instructions.
@@ -205,6 +205,6 @@ dfs.append(pandas.DataFrame(drift_reduction_data, columns=["TechnologyDriftReduc
 `product_table` : *C:...\xCropProtection\analysis\ProductTypes.csv*. This table defines product names and their type.
 
 ## Acknowledgements
-The need and the development of the xCP component was initiated by Thorsten Schad (thorsten.schad@bayer.com). It's realisation was only possibly due to the contribution of colleagues listed below and the sponsoring by Bayer AG.  
+The need for the xCP component was identified and its development was initiated by Thorsten Schad (thorsten.schad@landwerk-ev.de). It's realisation was only possibly due to the contribution of colleagues listed below and the sponsoring by Bayer AG.  
 
 <img src="img/Contributions.png" alt="Contributors and Roles" width="800"/>

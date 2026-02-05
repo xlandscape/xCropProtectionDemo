@@ -1,23 +1,25 @@
 # Scenarios
 
-In the context of risk assessment for pesticides, a *Scenario* refers to a set of conditions and assumptions used to model and predict the environmental fate and effects of pesticides ([Glossary/Scenarios](reference/glossary.md#scenario)). A *Scenario* is typically composed of 
+In the context of risk assessment for pesticides, a ***scenario*** represents a set of conditions and assumptions used to model and predict the environmental fate and effects of pesticides ([Glossary/Scenarios](reference/glossary.md#scenario)). A *Scenario* is typically composed of 
 
-1. *environmental conditions* (abiotic, biotic, land cover, etc.)
-2. *agricultural practise*, esp. land use and land management,  including the use of PPPs, as refered to as ***PPP use scenario***
+1. ***environmental conditions*** (abiotic, biotic, land cover, etc.)
+2. ***agricultural practise***, esp. land use and land management,  including the use of PPPs, as refered to as ***CropProtection scenario***
   
-In xCP, the term *PPP use scenario* is simultaneously addressed as ***Parameterisation* of xCP** (as part of a full parameterisation of a landscape model). The environmental conditions together with the land use are often called a ***landscape scenario***.   
-In an xCP parameterisation, PPP use are typically defined related to land use types (eg, the use of a fungicide in apples). During runtime xCP evaluates actual land use, ie. land use data can be static or dynamic. 
+A full ***parameterisation* of xCP** consists of the parameterisation of a CropProtection scenario together with environmental conditions and land use, called a ***landscape scenario***.  
+In an xCP parameterisation, PPP use are typically defined related to land use types (eg, the use of a specific fungicide in apples). During runtime xCP evaluates actual land use, hence, land use data can be static or dynamic.  
 
-Note: This section provides an introduction to xCP scenarios on a technical level with the intention to enable colleagues with technical experiance to build scenarios and to use xCP. However, we plan to develop a **graphical user interface** (GUI) that allows any user to intuitively build xCP scenarios. 
+Note: This section provides an introduction to xCP scenarios on a technical level with the intention to enable colleagues with technical experiance to build scenarios and to use xCP. However, it is our intention to provide simpler **user interfaces** that allows any user to more intuitively build xCP scenarios.  
 
 ## Example Scenarios
-The [xCropProtectionDemo](https://github.com/xlandscape/xCropProtectionDemo/tree/main) model is packaged with example scenarios located in the *scenario* folder. Example scenarios are of static land use types.  
+
+The [xCropProtectionDemo](https://github.com/xlandscape/xCropProtectionDemo/tree/main) model is shipped with example scenarios located in the *scenario* folder. Example scenarios are of static land use types.  
 
 - A scenario in Rummen, Belgium ([*Rummen-full*](scenarios/rummen-scenario.md))
 
 - A subset of the Rummen-full scenario in Rummen, Belgium ([*Rummen-xCP-TestingScenario*](scenarios/rummen-subset.md))
 
 ## Custom Scenarios
+
 To create a new scenario for use with xCropProtection, users should follow these steps.
 
 1. In folder *scenario\\*, create a new folder with the scenario name. In this example, the scenario will be called "test-scenario".
@@ -47,7 +49,7 @@ xsi:schemaLocation="urn:xLandscapeModelScenarioInfo ../../model/core/base/scenar
         <Item name="LandscapeScenario" target="geo/package.xinfo" version="1" />
     </Content>
     <Contacts>
-        <Contact>Thorsten Schad - thorsten.schad@bayer.com</Contact>
+        <Contact>Thorsten Schad - thorsten.schad@landwerk-ev.de</Contact>
     </Contacts>
 </Project>
 ```

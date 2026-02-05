@@ -10,7 +10,7 @@ The **current major release level is *1.x***, which essentially means that we ha
 
 *Illustration of a model composition using the xLandscape framework. The ***core*** is represented by the framing 'L' (dark blue). The boxes represent **components** (eg, 'xDrift') of specific functionality. The composition make a model, here xAquatic which simulates pesticide use in catchments, exposure of streams, pesticide transport and fate in streams, as well as effects to aquatic invertebrate species*. The integration assures inner consistancy of data and semantics (indicated by the light blue backgroud).  
 
-For futher information you might contact Thorsten Schad (mailto:thorsten.schad@bayer.com) or Sascha Bub (mailto:sascha.bub@rptu.de).  
+For futher information you might contact Thorsten Schad (mailto:thorsten.schad@landwerk-ev.de) or Sascha Bub (mailto:sascha.bub@rptu.de).  
 
 ## Vision
 

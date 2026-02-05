@@ -59,9 +59,9 @@ The decision on which model component parameters should be exposed as user inter
 
 Both, *configuration* and [*Parameterisation*](#parameterisation) refer to direct user inputs (user interaction) and are separated from more extense data inputs like land use data, weather data or pesticide phys-chem properties. Typically, in the user inputs links to such databases to be used in a landscape modelling [Experiment](#experiment) are defined wheras the actual data are taken from these databases.  
 
-## Crop Protection Calender
-The *Crop Protection Calender* (CPC) is a key parameterisation element of xCP. It is the entry point of each xCP PPP use scenario.  
-In agricultural practice, pest control measures for a crop are typically planned based on experiance, PPP availability and other factors. Such planning can happen quite early in a season or closer to actual pest control. Crop protection plans are made eg, by official plant protection advisory services, farmers, or PPP producers. The term *Calender* is used to emphasise its temporal (crop development stage) aspects and similarity to everyday calenders we are used to.  adaptation).  
+## Crop Protection Calendar
+The *Crop Protection Calendar* (CPC) is a key parameterisation element of xCP. It is the entry point of each xCP PPP use scenario.  
+In agricultural practice, pest control measures for a crop are typically planned based on experiance, PPP availability and other factors. Such planning can happen quite early in a season or closer to actual pest control. Crop protection plans are made eg, by official plant protection advisory services, farmers, or PPP producers. The term *Calendar* is used to emphasise its temporal (crop development stage) aspects and similarity to everyday Calendars we are used to.  adaptation).  
 Besides reflecting ag practice, the approach of using a CPC also addresses modelling practice in risk assessment which typically focus on a certain indication, conducted over long time periods. 
 Beyond these established uses, alternative CPCs can be used to assess the environmental impact of alternative pest control options, or to design new pest control means against established ones, considered as baselines.  
 
@@ -72,7 +72,7 @@ Summary on CPC characteristics: a CPC
 
 <br>
 
-![Example Plant Protection Calender](../img/Example%20plant%20protection%20recommendation%20in%20apples.jpg "Example Plant Protection Recommendation in Apple")  
+![Example Plant Protection Calendar](../img/Example%20plant%20protection%20recommendation%20in%20apples.jpg "Example Plant Protection Recommendation in Apple")  
 *Visualisation of plant protection recommendations in apple for the forthcomming season (colors represent insecticides, fungicides, growth regulators and herbicides)*
 
 ![Plant Protection Recommendation in Vines (Bayer)](../img/Bayer%20Weinbau%20Spritzplan%202024.png "Plant Protection Recommendation in Vines (Bayer)")  

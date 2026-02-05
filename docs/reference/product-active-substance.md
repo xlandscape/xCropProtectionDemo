@@ -31,7 +31,7 @@ Description	: The output type of applications for all fields.
 Values		: Should be one of two strings: 'product' or 'active substance' (without '')
 Remark		: Note the different combinations of input(specified in PPM Calendars) and output types.
                 input product 			-> output product 			: valid
-                input product 			-> output product			: valid
+                input product 			-> output active substance  : valid
                 input active substance 	-> output active substance	: valid
                 input active substance 	-> output product 			: invalid
 -->

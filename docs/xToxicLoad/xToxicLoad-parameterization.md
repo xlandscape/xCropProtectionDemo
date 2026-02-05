@@ -57,7 +57,7 @@ Note the different combinations of input (specified in PPM Calendars) and `Outpu
 
 ``` { .yaml .no-copy }
 input product 			-> output product 			: valid
-input product 			-> output product			: valid
+input product 			-> output active substance  : valid
 input active substance 	-> output active substance	: valid
 input active substance 	-> output product 			: invalid
 ```

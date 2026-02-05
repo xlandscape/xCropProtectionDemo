@@ -73,7 +73,7 @@
   Values        :  Any characters that are valid in file system identifiers.
   Remark        :  Running an experiment with the same name as an existing simulation run results in an error.
   -->
-  <SimID>test-SingleField_100x100_dev2</SimID>
+  <SimID>test-SingleField_100x100_dev3</SimID>
 
   <!--
   Parameter     :  NumberMC

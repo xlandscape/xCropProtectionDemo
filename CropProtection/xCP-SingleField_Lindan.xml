@@ -5,7 +5,7 @@
     xsi:schemaLocation="urn:xCropProtectionLandscapeScenarioParametrization ../model/core/components/xCropProtection/xCropProtection.xsd"
 >
     <PPMCalendars>
-        <PPMCalendar include="PPMCalendars/Demo-calendars/PPMCalendar-2.xml"/>
+        <PPMCalendar include="PPMCalendars/Simple_SingleField-calendar/PPMCalendar-SingleFieldLindan_1.xml"/>
     </PPMCalendars>
     <Technologies include="Technologies.xml"/>
 </xCropProtection>

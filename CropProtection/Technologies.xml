@@ -10,4 +10,8 @@
         <TechnologyName scales="global">Technology2</TechnologyName>
         <DriftReduction type="float" unit="1" scales="global">0.4</DriftReduction>
     </Technology>
+    <Technology>
+        <TechnologyName scales="global">Standard-Sprayer</TechnologyName>
+        <DriftReduction type="float" unit="1" scales="global">0</DriftReduction>
+    </Technology>
 </Technologies>

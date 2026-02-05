@@ -14,7 +14,7 @@
   Values        :  Should be an existing scenario (relative path), typically provided in the folder 'scenario'.
   Remark        :  Make sure that the scenario is present in the scenario sub-folder.
   -->
-  <Project>scenario/Rummen</Project>
+  <Project>scenario/SingleField_100x100_dev</Project>
 
   <!--
   Parameter     :  CropProtectionScenario
@@ -24,7 +24,7 @@
 				   for Excel files.
   Remark        :  Make sure that the CP scenario is present in the CropProtection sub-folder.
   -->
-  <CropProtectionScenario>xCP-UI-SingleSubstance_ths_feb2026_1.xlsx</CropProtectionScenario>
+  <CropProtectionScenario>xCP-SingleField_Lindan.xml</CropProtectionScenario>
   
   <!--
   Parameter		: OutputApplicationType
@@ -32,11 +32,11 @@
   Values		: Should be one of two strings: 'product' or 'active substance' (without '')
   Remark		: Note the different combinations of input(specified in PPM Calendars) and output types.
 					input product 			-> output product 			: valid
-					input product 			-> output product			: valid
+					input product 			-> output active substance  : valid
 					input active substance 	-> output active substance	: valid
 					input active substance 	-> output product 			: invalid
   -->
-  <OutputApplicationType>active substance</OutputApplicationType>
+  <OutputApplicationType>product</OutputApplicationType>
   
   <!--
   Parameter		: ProductDatabase
@@ -65,7 +65,7 @@
                    (especially the landscape scenario). The available ranges can be obtained from the scenario
                    documentation.
   -->
-  <SimulationEnd>2005-12-31</SimulationEnd>
+  <SimulationEnd>2009-12-31</SimulationEnd>
 
   <!--
   Parameter     :  SimID
@@ -73,7 +73,7 @@
   Values        :  Any characters that are valid in file system identifiers.
   Remark        :  Running an experiment with the same name as an existing simulation run results in an error.
   -->
-  <SimID>test_ths-DLT1</SimID>
+  <SimID>test-SingleField_100x100_dev3</SimID>
 
   <!--
   Parameter     :  NumberMC
@@ -100,5 +100,5 @@
 				   InFieldMargin values (defined in PPMCalendars), no application will occur.
 				   This value applies to all fields in the scenario.
   -->
-  <MinimumAppliedArea>1</MinimumAppliedArea>
+  <MinimumAppliedArea>0</MinimumAppliedArea>
 </Parameters>

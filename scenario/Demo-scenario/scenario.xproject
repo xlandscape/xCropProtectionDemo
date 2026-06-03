@@ -25,6 +25,6 @@
         <Item name="LandscapeScenario" target="geo/package.xinfo" version="1.0" />
     </Content>
     <Contacts>
-        <Contact>Thorsten Schad - thorsten.schad@bayer.com</Contact>
+        <Contact>Thorsten Schad - thorsten.schad@landwerk-ev.de</Contact>
     </Contacts>
 </Project>

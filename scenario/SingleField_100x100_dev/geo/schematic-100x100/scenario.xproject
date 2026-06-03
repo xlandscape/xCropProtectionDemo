@@ -29,7 +29,7 @@
         <Item name="VfsMod_lookup_table" target="run-off/Example_lookup_table.csv" version="1"/>
     </Content>
     <Contacts>
-        <Contact>Thorsten Schad - thorsten.schad@bayer.com</Contact>
+        <Contact>Thorsten Schad - thorsten.schad@landwerk-ev.de</Contact>
         <Contact>Sascha Bub - sascha.bub.ext@bayer.com</Contact>
     </Contacts>
     <Acknowledgements>

@@ -1,13 +1,15 @@
 # Multiple Application Sequences
 
 ## Background
-In agricultural landscapes, a number of pesticides are being used for pest control. This even applies to individual crop types. Typically, **a range of alternative pest control measures are available to the farmer as optional tool sets to control the same pest**. Eg, to control fungal deseases in vines, >100 products are available from different producers in Germany plus organic/biological control means. In order to reflect such alternative pest control measures, eg, in a landscape-level risk assessment and risk management analysis, xCP allows to define alternative *Application Sequences* within an *Indication*. Such alternative can eg, reflect market share of products. 
+
+In agricultural landscapes, a number of pesticides are being used for pest control. This even applies to individual crop types. Typically, **a range of alternative pest control measures are available to the farmer as optional tool sets to control the same pest**. Eg, to control fungal deseases in vines, >100 products are available from different producers in Germany plus organic/biological control means. In order to reflect such alternative pest control measures, eg, in a landscape-level risk assessment and risk management analysis, xCP allows to define alternative *Application Sequences* within an *Indication*. Such alternative can eg, reflect market share of products.  
 
 ## Parameterisation
+
 To be able to model real-world alternative pest control means, `ApplicationSequence` XML elements have a **probability value** associated with them.
 
 !!! note
-    For each `Indication`, the sum of all `ApplicationSequence` probability values must sum to exactly 1.0. 
+    For each `Indication`, the sum of all `ApplicationSequence` probability values must sum to exactly 1.0.  
 
 An `ApplicationSequence` has a probability of occurring for each field according to the user-defined probability value. The `ApplicationSequence` probability is sampled each year of the simulation, meaning that the `ApplicationSequence` chosen for a given year is not necessarily the `ApplicationSequence` that will be chosen next year for that field.
 

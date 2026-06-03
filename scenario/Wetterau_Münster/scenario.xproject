@@ -3,22 +3,19 @@
     xmlns="urn:xLandscapeModelScenarioInfo"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="urn:xLandscapeModelScenarioInfo ../../model/core/base/scenario.xsd">
-    <Name>DemoScenario</Name>
-    <Version>1.1</Version>
+    <Name>Wetterau-Münster</Name>
+    <Version>2.3</Version>
     <SupportedRuntimeVersions>
         <Version variant="xCropProtection" number="1.0"/>
     </SupportedRuntimeVersions>
-    <Description>Subset of a landscape scenario in Rummen, Belgium. Used to demo and test xCropProtection functionality.</Description>
+    <Description>Northern part of the Wetterau. Currently represented land use is arable.</Description>
     <TemporalExtent>
         <FromDate>1979-01-01</FromDate>
         <ToDate>2022-12-31</ToDate>
     </TemporalExtent>
     <Changelog>
-        <Version number="1.0" date="2024-05-16">
+        <Version number="1.0" date="2026-02-05">
             <Addition author="ceh">Scenario created.</Addition>
-        </Version>
-        <Version number="1.1" date="2024-11-13">
-            <Change author="ceh">Changed name to DemoScenario and updated xCropProtection version to 1.0.</Change>
         </Version>
     </Changelog>
     <Content>

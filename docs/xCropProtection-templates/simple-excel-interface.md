@@ -1,10 +1,10 @@
 # Simple Excel Interface
 
-As a first step to developing a full Graphical User Interface (GUI), we have developed an Excel interface that makes parameterizing simple xCropProtection scenarios easier. This Excel file is used as an alternative to the xCropProtection XML parameterization files (referred to as xCropProtection.xml on this page).
+As a first step to developing an improved User Interface (UI), we have developed an Excel interface that makes parameterizing simple xCropProtection scenarios easier. This Excel file is used as an alternative to the xCropProtection XML parameterization files (referred to as xCropProtection.xml on this page).
 
 ## General information
 
-The Excel interface should be used when the scenario spans only one year or PPP applications occur during the same window each year. Multiple LULC types and PPPs can be defined, but no probability distribution functions are allowed for application rates (each rate must be a constant value). Each application can have independent in-crop buffers, in-field margins, and spray-drift reduction values. However, this interface does not support choice between multiple application sequences.
+The Excel interface should be used when the scenario definition only one year or PPP applications occur during the same window each year. Multiple LULC types and PPPs can be defined, but no probability distribution functions are allowed for application rates (each rate must be a constant value). Each application can have independent in-crop buffers, in-field margins, and spray-drift reduction values. However, this interface does not support choice between multiple application sequences.
 
 A PPM Calendar will be created for each unique LULC added to the Excel interface, with each PPM Calendar having one `Indication` and `ApplicationSequence` element.
 

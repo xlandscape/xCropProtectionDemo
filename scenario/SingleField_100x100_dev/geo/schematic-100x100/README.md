@@ -52,7 +52,7 @@ Distributed under the CC0 License. See `LICENSE` for more information.
 
 
 ## Contact
-* Thorsten Schad - thorsten.schad@bayer.com
+* Thorsten Schad - thorsten.schad@landwerk-ev.de
 * Sascha Bub - sascha.bub.ext@bayer.com
 
 

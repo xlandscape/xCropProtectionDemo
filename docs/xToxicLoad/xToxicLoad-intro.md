@@ -9,7 +9,7 @@ At present, intended for demonstration purposes,
 
 ## Installation
 
-To clone the xToxicLoad repository, you must have access to the private repository. Contact Sascha Bub ([sascha.bub@rptu.de](mailto:sascha.bub@rptu.de)) or Thorsten Schad ([thorsten.schad@bayer.com](mailto:thorsten.schad@bayer.com)) for access to the repository. Cloning steps vary based on application.
+To clone the xToxicLoad repository, you must have access to the private repository. Contact Sascha Bub ([sascha.bub@rptu.de](mailto:sascha.bub@rptu.de)) or Thorsten Schad ([thorsten.schad@landwerk-ev.de](mailto:thorsten.schad@landwerk-ev.de)) for access to the repository. Cloning steps vary based on application.
 
 - [Sourcetree](https://support.atlassian.com/bitbucket-cloud/docs/clone-a-git-repository/)
 - [Visual Studio Code](https://learn.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository?tabs=activity-bar)

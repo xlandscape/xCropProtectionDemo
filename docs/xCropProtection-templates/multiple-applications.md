@@ -1,10 +1,12 @@
 # Multiple Applications
 
 ## Background
-For some pest control measures in agricultural practice a *sequence* of PPP application is conducted. A typical example is to control fungal pests where a number of fungicide applications are recommended in a sequence during cultivation season. This can be represented (parameterised) in xCP. For more information see eg, [Indication](../reference/glossary.md#indication) in the [Glossary](../reference/glossary.md).   
+
+For some pest control measures in agricultural practice a *sequence* of PPP application is conducted. A typical example is to control fungal pests where a number of fungicide applications are recommended in a sequence during cultivation season. This can be represented (parameterised) in xCP. For more information see eg, [Indication](../reference/glossary.md#indication) in the [Glossary](../reference/glossary.md).  
 In xCP, each individual application in an *Application Sequence* can be independently defined. This allows eg, to use different PPPs within the individual application of an *Application Sequence*.  
 
 ## Parameterisation
+
 An `ApplicationSequence` can contain multiple `Application` elements, each with independent attributes.
 
 Adding multiple `Application` elements to an `ApplicationSequence` should be used when applications are dependent on each other, though the attributes of each `Application` need not be the same.
@@ -120,7 +122,6 @@ The same field types will also receive an application of Product 2 between June 
 ```
 
 For explanations of each element, see [Simple Scenario](simple-scenario.md).
-
 
 ### Illustration
 

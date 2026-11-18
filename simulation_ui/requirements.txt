@@ -2,3 +2,5 @@ streamlit>=1.40,<2
 geopandas>=1.0,<2
 folium>=0.16,<1
 streamlit-folium>=0.20,<1
+matplotlib>=3.8,<4
+mapclassify>=2.6,<3

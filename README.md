@@ -67,8 +67,10 @@ non-destructive run configurations:
 
 ```powershell
 python -m pip install -r simulation_ui\requirements.txt
-python -m streamlit run simulation_ui\app.py
+Dashboard_start.bat
 ```
+
+Run `Dashboard_stop.bat` to stop the dashboard.
 
 See [`simulation_ui/README.md`](simulation_ui/README.md) for the supported
 workflow and generated-file locations.

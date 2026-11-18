@@ -11,10 +11,20 @@ From the repository root:
 
 ```powershell
 python -m pip install -r simulation_ui\requirements.txt
-python -m streamlit run simulation_ui\app.py
+Dashboard_start.bat
 ```
 
 The browser UI opens at `http://localhost:8501`.
+
+Stop the dashboard with:
+
+```powershell
+Dashboard_stop.bat
+```
+
+The wrappers use `.venv\Scripts\python.exe` when available and otherwise fall
+back to `python` from `PATH`. Additional Streamlit arguments can be passed to
+`Dashboard_start.bat`.
 
 ## Supported workflow
 

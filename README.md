@@ -60,6 +60,22 @@ To run xCropProtection, drag one of the template.xrun files onto *__start_\_.bat
 
 For information about parameterizing xCropProtection, see the CropProtection component's [`README`](https://github.com/xlandscape/CropProtection-Component/blob/main/README.md). Also, see the Templates section of the documentation for examples and information on how to build your own PPM Calendars.
 
+### Browser-based parameterisation
+
+The repository includes a Python/Streamlit interface for creating validated,
+non-destructive run configurations:
+
+```powershell
+python -m pip install -r simulation_ui\requirements.txt
+python -m streamlit run simulation_ui\app.py
+```
+
+See [`simulation_ui/README.md`](simulation_ui/README.md) for the supported
+workflow and generated-file locations.
+
+An introductory slide deck is available at
+[`devdocs/CropProtection_Introduction.pptx`](devdocs/CropProtection_Introduction.pptx).
+
 ### Scenarios
 
 xCropProtection version 1.2 includes 2 landscape scenarios:

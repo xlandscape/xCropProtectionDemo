@@ -1,3 +1,7 @@
 run/
+CropProtection/generated/
+simulation_ui/generated/
+__pycache__/
+*.pyc
 .idea/
 .vscode/

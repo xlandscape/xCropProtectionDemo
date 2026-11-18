@@ -1,0 +1,4 @@
+streamlit>=1.40,<2
+geopandas>=1.0,<2
+folium>=0.16,<1
+streamlit-folium>=0.20,<1
